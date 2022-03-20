@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
+  <link href="./assets/favicon.ico" rel="icon">
+
+  <title>RealRadioActive Github Page</title>  
+
+<link href="main.3f6952e4.css" rel="stylesheet"></head>
+
+<body class="">
+<div id="site-border-left"></div>
+<div id="site-border-right"></div>
+<div id="site-border-top"></div>
+<div id="site-border-bottom"></div>
+ <!-- Add your content of header -->
+<header>
+  <nav class="navbar  navbar-fixed-top navbar-default">
+    <div class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav ">
+       <li><a href="./index.html" title="">01 : /root</a></li>
+          <li><a href="./hacks.html" title="">02 : /Hack</a></li>
+          <li><a href="./about.html" title="">03 : /About me</a></li>
+          <li><a href="./contact.html" title="">04 : /Contact</a></li>
+          <li><a href="./others.html" title="">05 : /Others</a></li>
+        </ul>
+
+
+      </div> 
+    </div>
+  </nav>
+</header>
+
+
+
+
+
+
+
+<div class="section-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="section-container-spacer text-center">
+            <h1 class="h2">02 : /NMap#</h1>
+			
+          </div>
+          
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="row">
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+       <div id="content" class="content">
+                    <main>
+                        <div class="Notes_baslik">~/NMap# <b>█</b></div>
+<style>
+#Notes_table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#Notes_table td, #Notes_table th {
+    border: 1px solid #ddd;
+    padding: 6px;
+}
+
+/*#Notes_table tr:nth-child(even){background-color: #f2f2f2;}*/
+#Notes_table tr:hover {
+    background-color: #1d0e0e;
+    }
+
+#Notes_table th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
+<table id="Notes_table">
+<tr>
+    <td style="color:#ffb454;font-weight: bold;">Target Specification </td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td style="font-weight: bold;">Switch</td>
+    <td style="font-weight: bold;">Example</td>
+    <td style="font-weight: bold;">Description</td>
+</tr>
+<tr>
+    <td>-</td>
+    <td>nmap 192.168.1.1</td>
+    <td>Scan a single IP</td>
+</tr>
+<tr>
+    <td>-</td>
+    <td>nmap 192.168.1.1 192.168.2.1</td>
+    <td>Scan specific IPs</td>
+</tr>
+<tr>
+    <td>-</td>
+    <td>nmap 192.168.1.1-254</td>
+    <td>Scan a range</td>
+</tr>
+<tr>
+    <td>-</td>
+    <td>nmap scanme.nmap.org</td>
+    <td>Scan a domain</td>
+</tr>
+<tr>
+    <td>-</td>
+    <td>nmap 192.168.1.0/24</td>
+    <td>Scan using CIDR notation</td>
+</tr>
+<tr>
+    <td>-iL</td>
+    <td>nmap -iL targets.txt</td>
+    <td>Scan targets from a file</td>
+</tr>
+<tr>
+    <td>-iR</td>
+    <td>nmap -iR 100</td>
+    <td>Scan 100 random hosts</td>
+</tr>
+<tr>
+    <td>--exclude</td>
+    <td>nmap --exclude 192.168.1.1</td>
+    <td>Exclude listed hosts</td>
+</tr>
+</table>
+<br>
+<table id="Notes_table">
+<tr>
+    <td style="color:#ffb454;font-weight: bold;">Scan Techniques</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td style="font-weight: bold;">Switch</td>
+    <td style="font-weight: bold;">Example</td>
+    <td style="font-weight: bold;">Description</td>
+</tr>
+<tr>
+    <td>-sS</td>
+    <td>nmap 192.168.1.1 -sS</td>
+    <td>TCP SYN port scan (Default)</td>
+</tr>
+<tr>
+    <td>-sT</td>
+    <td>nmap 192.168.1.1 -sT</td>
+    <td>TCP connect port scan (Default without root privilege)</td>
+</tr>
+<tr>
+    <td>-sU</td>
+    <td>nmap 192.168.1.1 -sU</td>
+    <td>UDP port scan</td>
+</tr>
+<tr>
+    <td>-sA</td>
+    <td>nmap 192.168.1.1 -sA</td>
+    <td>TCP ACK port scan</td>
+</tr>
+<tr>
+    <td>-sW</td>
+    <td>nmap 192.168.1.1 -sW</td>
+    <td>TCP Window port scan</td>
+</tr>
+<tr>
+    <td>-sM</td>
+    <td>nmap 192.168.1.1 -sM</td>
+    <td>TCP Maimon port scan</td>
+</tr>
+</table>
+<br>
+<table id="Notes_table">
+<tr>
+    <td style="color:#ffb454;font-weight: bold;">Host Discovery</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td style="font-weight: bold;">Switch</td>
+    <td style="font-weight: bold;">Example</td>
+    <td style="font-weight: bold;">Description</td>
+</tr>
+<tr>
+    <td>-sL</td>
+    <td>nmap 192.168.1.1-3 -sL</td>
+    <td>No Scan. List targets only</td>
+</tr>
+<tr>
+    <td>-sn</td>
+    <td>nmap 192.168.1.1/24 -sn</td>
+    <td>Scan 100 random hosts</td>
+</tr>
+<tr>
+    <td>-Pn</td>
+    <td>nmap 192.168.1.1-5 -Pn</td>
+    <td>Disable host discovery. Port scan only.</td>
+</tr>
+<tr>
+    <td>-PS</td>
+    <td>nmap 192.168.1.1-5 -PS22-25,80</td>
+    <td>TCP SYN discovery on port x. Port 80 by default</td>
+</tr>
+<tr>
+    <td>-PA</td>
+    <td>nmap 192.168.1.1-5 -PA22-25,80</td>
+    <td>TCP ACK discovery on port x. Port 80 by default</td>
+</tr>
+<tr>
+    <td>-PU</td>
+    <td>nmap 192.168.1.1-5 -PU53</td>
+    <td>UDP discovery on port x. Port 40125 by default</td>
+</tr>
+<tr>
+    <td>-PR</td>
+    <td>nmap 192.168.1.1-1/24 -PR</td>
+    <td>ARP discovery on local network</td>
+</tr>
+<tr>
+    <td>-n</td>
+    <td>nmap 192.168.1.1 -n</td>
+    <td>Never do DNS resolution</td>
+</tr>
+</table>
+<br>
+<table id="Notes_table">
+<tr>
+    <td style="color:#ffb454;font-weight: bold;">Port Specification</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td style="font-weight: bold;">Switch</td>
+    <td style="font-weight: bold;">Example</td>
+    <td style="font-weight: bold;">Description</td>
+</tr>
+<tr>
+    <td>-p</td>
+    <td>nmap 192.168.1.1 -p 21</td>
+    <td>Port scan for port x</td>
+</tr>
+<tr>
+    <td>-p</td>
+    <td>nmap 192.168.1.1 -p 21-100</td>
+    <td>Port range</td>
+</tr>
+<tr>
+    <td>-p</td>
+    <td>nmap 192.168.1.1 -p U:53,T:21-25,80</td>
+    <td>Port scan multiple TCP and UDP ports</td>
+</tr>
+<tr>
+    <td>-p-</td>
+    <td>nmap 192.168.1.1 -p-</td>
+    <td>Port scan all ports</td>
+</tr>
+<tr>
+    <td>-p</td>
+    <td>nmap 192.168.1.1 -p http,https</td>
+    <td>Port scan from service name</td>
+</tr>
+<tr>
+    <td>-F</td>
+    <td>nmap 192.168.1.1 -F</td>
+    <td>Fast port scan (100 ports)</td>
+</tr>
+<tr>
+    <td>--top-ports</td>
+    <td>nmap 192.168.1.1 --top-ports 2000</td>
+    <td>Port scan the top x ports</td>
+</tr>
+<tr>
+    <td>-p-65535</td>
+    <td>nmap 192.168.1.1 -p-65535</td>
+    <td>Leaving off initial port in range makes the scan start at port 1</td>
+</tr>
+<tr>
+    <td>-p0-</td>
+    <td>nmap 192.168.1.1 -p0-</td>
+    <td>Leaving off end port in range makes the scan go through to port 65535</td>
+</tr>
+</table>
+<br>
+<table id="Notes_table">
+<tr>
+    <td style="color:#ffb454;font-weight: bold;">Service and Version Detection</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td style="font-weight: bold;">Switch</td>
+    <td style="font-weight: bold;">Example</td>
+    <td style="font-weight: bold;">Description</td>
+</tr>
+<tr>
+    <td>-sV</td>
+    <td>nmap 192.168.1.1 -sV</td>
+    <td>Attempts to determine the version of the service running on port</td>
+</tr>
+<tr>
+    <td>-sV --version-intensity</td>
+    <td>nmap 192.168.1.1 -sV --version-intensity 8</td>
+    <td>Intensity level 0 to 9. Higher number increases possibility of correctness</td>
+</tr>
+<tr>
+    <td>-sV --version-light</td>
+    <td>nmap 192.168.1.1 -sV --version-light</td>
+    <td>Enable light mode. Lower possibility of correctness. Faster</td>
+</tr>
+<tr>
+    <td>-sV --version-all</td>
+    <td>nmap 192.168.1.1 -sV --version-all</td>
+    <td>Enable intensity level 9. Higher possibility of correctness. Slower</td>
+</tr>
+<tr>
+    <td>-A</td>
+    <td>nmap 192.168.1.1 -A</td>
+    <td>Enables OS detection, version detection, script scanning, and traceroute</td>
+</tr>
+</table>
+<br>
+<table id="Notes_table">
+<tr>
+    <td style="color:#ffb454;font-weight: bold;">OS Detection</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td style="font-weight: bold;">Switch</td>
+    <td style="font-weight: bold;">Example</td>
+    <td style="font-weight: bold;">Description</td>
+</tr>
+<tr>
+    <td>-O</td>
+    <td>nmap 192.168.1.1 -O</td>
+    <td>Remote OS detection using TCP/IP stack fingerprinting</td>
+</tr>
+<tr>
+    <td>-O --osscan-limit</td>
+    <td>nmap 192.168.1.1 -O --osscan-limit</td>
+    <td>If at least one open and one closed TCP port are not found it will not try OS detection against host</td>
+</tr>
+<tr>
+    <td>-O --osscan-guess</td>
+    <td>nmap 192.168.1.1 -O --osscan-guess</td>
+    <td>Makes Nmap guess more aggressively</td>
+</tr>
+<tr>
+    <td>-O --max-os-tries</td>
+    <td>nmap 192.168.1.1 -O --max-os-tries 1</td>
+    <td>Set the maximum number x of OS detection tries against a target</td>
+</tr>
+<tr>
+    <td>-A</td>
+    <td>nmap 192.168.1.1 -A</td>
+    <td>Enables OS detection, version detection, script scanning, and traceroute</td>
+</tr>
+</table>
+<br>
+<table id="Notes_table">
+<tr>
+    <td style="color:#ffb454;font-weight: bold;">Timing and Performance</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td style="font-weight: bold;">Switch</td>
+    <td style="font-weight: bold;">Example</td>
+    <td style="font-weight: bold;">Description</td>
+</tr>
+<tr>
+    <td>-T0</td>
+    <td>nmap 192.168.1.1 -T0</td>
+    <td>Paranoid (0) Intrusion Detection System evasion</td>
+</tr>
+<tr>
+    <td>-T1</td>
+    <td>nmap 192.168.1.1 -T1</td>
+    <td>Sneaky (1) Intrusion Detection System evasion</td>
+</tr>
+<tr>
+    <td>-T2</td>
+    <td>nmap 192.168.1.1 -T2</td>
+    <td>Polite (2) slows down the scan to use less bandwidth and use less target machine resources</td>
+</tr>
+<tr>
+    <td>-T3</td>
+    <td>nmap 192.168.1.1 -T3</td>
+    <td>Normal (3) which is default speed</td>
+</tr>
+<tr>
+    <td>-T4</td>
+    <td>nmap 192.168.1.1 -T4</td>
+    <td>Aggressive (4) speeds scans; assumes you are on a reasonably fast and reliable network</td>
+</tr>
+<tr>
+    <td>-T5</td>
+    <td>nmap 192.168.1.1 -T5</td>
+    <td>Insane (5) speeds scan; assumes you are on an extraordinarily fast network</td>
+</tr>
+<tr>
+    <td style="font-weight: bold;">Switch</td>
+    <td style="font-weight: bold;">Example input</td>
+    <td style="font-weight: bold;">Description</td>
+</tr>
+<tr>
+    <td>--host-timeout  </td>
+    <td>1s; 4m; 2h </td>
+    <td>  Give up on target after this long </td>
+</tr>
+<tr>
+    <td>--min-rtt-timeout/max-rtt-timeout/initial-rtt-timeout  </td>
+    <td>1s; 4m; 2h </td>
+    <td>  Specifies probe round trip time </td>
+</tr>
+<tr>
+    <td>--min-hostgroup/max-hostgroup  </td>
+    <td>50; 1024 </td>
+    <td>  Parallel host scan group sizes </td>
+</tr>
+<tr>
+    <td>--min-parallelism/max-parallelism  </td>
+    <td>10; 1 </td>
+    <td>  Probe parallelization  </td>
+</tr>
+<tr>
+    <td>--scan-delay/--max-scan-delay  </td>
+    <td>20ms; 2s; 4m; 5h </td>
+    <td>  Adjust delay between probes  </td>
+</tr>
+<tr>
+    <td>--max-retries  </td>
+    <td>3</td>
+    <td> Specify the maximum number of port scan probe retransmissions </td>
+</tr>
+<tr>
+    <td>--min-rate  </td>
+    <td>100</td>
+    <td> Send packets no slower than  per second </td>
+</tr>
+<tr>
+    <td>--max-rate  </td>
+    <td>100</td>
+    <td> Send packets no faster than  per second </td>
+</tr>
+</table>
+<br>
+<table id="Notes_table">
+<tr>
+    <td style="color:#ffb454;font-weight: bold;">NSE Scripts</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td style="font-weight: bold;">Switch</td>
+    <td style="font-weight: bold;">Example</td>
+    <td style="font-weight: bold;">Description</td>
+</tr>
+<tr>
+    <td>  -sC </td>
+    <td>  nmap 192.168.1.1 -sC </td>
+    <td>  Scan with default NSE scripts. Considered useful for discovery and safe </td>
+</tr>
+<tr>
+    <td>  --script default </td>
+    <td>  nmap 192.168.1.1 --script default </td>
+    <td>  Scan with default NSE scripts. Considered useful for discovery and safe </td>
+</tr>
+<tr>
+    <td>  --script </td>
+    <td>  nmap 192.168.1.1 --script=banner </td>
+    <td>  Scan with a single script. Example banner </td>
+</tr>
+<tr>
+    <td>  --script </td>
+    <td>  nmap 192.168.1.1 --script=http* </td>
+    <td>  Scan with a wildcard. Example http  </td>
+</tr>
+<tr>
+    <td>  --script </td>
+    <td>  nmap 192.168.1.1 --script=http,banner </td>
+    <td>  Scan with two scripts. Example http and banner  </td>
+</tr>
+<tr>
+    <td> --script </td>
+    <td> nmap 192.168.1.1 --script "not intrusive" </td>
+    <td> Scan default, but remove intrusive scripts </td>
+</tr>
+<tr>
+    <td> --script-args </td>
+    <td> nmap --script snmp-sysdescr --script-args snmpcommunity=admin 192.168.1.1 </td>
+    <td> NSE script with arguments </td>
+</tr>
+<tr>
+    <td style="font-weight: bold;">Command</td>
+    <td style="font-weight: bold;">Description</td>
+    <td></td>
+</tr>
+<tr>
+    <td>nmap -Pn --script=http-sitemap-generator scanme.nmap.org </td>
+    <td>  http site map generator </td>
+    <td></td>
+</tr>
+<tr>
+    <td>nmap -n -Pn -p 80 --open -sV -vvv --script banner,http-title -iR 1000 </td>
+    <td>  Fast search for random web servers </td>
+    <td></td>
+</tr>
+<tr>
+    <td>nmap -Pn --script=dns-brute domain.com </td>
+    <td>  Brute forces DNS hostnames guessing subdomains </td>
+    <td></td>
+</tr>
+<tr>
+    <td>nmap -n -Pn -vv -O -sV --script smb-enum*,smb-ls,smb-mbenum,smb-os-discovery,smb-s*,smb-vuln*,smbv2* -vv 192.168.1.1 </td>
+    <td>  Safe SMB scripts to run  </td>
+    <td></td>
+</tr>
+<tr>
+    <td>nmap --script whois* domain.com </td>
+    <td>  Whois query  </td>
+    <td></td>
+</tr>
+<tr>
+    <td>nmap -p80 --script http-unsafe-output-escaping scanme.nmap.org </td>
+    <td> Detect cross site scripting vulnerabilities </td>
+    <td></td>
+</tr>
+<tr>
+    <td>nmap -p80 --script http-sql-injection scanme.nmap.org </td>
+    <td> Check for SQL injections </td>
+    <td></td>
+</tr>
+</table>
+<br>
+<table id="Notes_table">
+<tr>
+    <td style="color:#ffb454;font-weight: bold;">Firewall / IDS Evasion and Spoofing</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td style="font-weight: bold;">Switch</td>
+    <td style="font-weight: bold;">Example</td>
+    <td style="font-weight: bold;">Description</td>
+</tr>
+<tr>
+    <td>  -f </td>
+    <td>  nmap 192.168.1.1 -f </td>
+    <td> Requested scan (including ping scans) use tiny fragmented IP packets. Harder for packet filters </td>
+</tr>
+<tr>
+    <td>  --mtu </td>
+    <td>  nmap 192.168.1.1 --mtu 32 </td>
+    <td>  Set your own offset size </td>
+</tr>
+<tr>
+    <td>  -D </td>
+    <td>  nmap -D 192.168.1.101,192.168.1.102, 192.168.1.103,192.168.1.23 192.168.1.1 </td>
+    <td>  Send scans from spoofed IPs </td>
+</tr>
+<tr>
+    <td>  -D </td>
+    <td>  nmap -D decoy-ip1,decoy-ip2,your-own-ip,decoy-ip3,decoy-ip4 remote-host-ip </td>
+    <td>  Above example explained  </td>
+</tr>
+<tr>
+    <td>  -S </td>
+    <td>  nmap -S www.microsoft.com www.facebook.com </td>
+    <td>  Scan Facebook from Microsoft (-e eth0 -Pn may be required)  </td>
+</tr>
+<tr>
+    <td> -g </td>
+    <td> nmap -g 53 192.168.1.1 </td>
+    <td> Use given source port number </td>
+</tr>
+<tr>
+    <td> --proxies </td>
+    <td> nmap --proxies http://192.168.1.1:8080, http://192.168.1.2:8080 192.168.1.1 </td>
+    <td> Relay connections through HTTP/SOCKS4 proxies </td>
+</tr>
+<tr>
+    <td> --data-length </td>
+    <td> nmap --data-length 200 192.168.1.1 </td>
+    <td> Appends random data to sent packets </td>
+</tr>
+</table>
+<br>
+<table id="Notes_table">
+<tr>
+    <td style="color:#ffb454;font-weight: bold;">Example IDS Evasion command</td>
+</tr>
+<tr>
+    <td>nmap -f -t 0 -n -Pn –data-length 200 -D 192.168.1.101,192.168.1.102,192.168.1.103,192.168.1.23 192.168.1.1</td>
+</tr>
+</table>
+<br>
+<table id="Notes_table">
+<tr>
+    <td style="color:#ffb454;font-weight: bold;">Output</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td style="font-weight: bold;">Switch </td>
+    <td style="font-weight: bold;">Example </td>
+    <td style="font-weight: bold;">Description </td>
+</tr>
+<tr>
+    <td>  -oN </td>
+    <td>  nmap 192.168.1.1 -oN normal.file </td>
+    <td>  Normal output to the file normal.file </td>
+</tr>
+<tr>
+    <td>  -oX </td>
+    <td>  nmap 192.168.1.1 -oX xml.file </td>
+    <td>  XML output to the file xml.file </td>
+</tr>
+<tr>
+    <td>  -oG </td>
+    <td>  nmap 192.168.1.1 -oG grep.file </td>
+    <td>  Grepable output to the file grep.file </td>
+</tr>
+<tr>
+    <td>  -oA </td>
+    <td>  nmap 192.168.1.1 -oA results </td>
+    <td>  Output in the three major formats at once  </td>
+</tr>
+<tr>
+    <td>  -oG - </td>
+    <td>  nmap 192.168.1.1 -oG - </td>
+    <td>  Grepable output to screen. -oN -, -oX - also usable  </td>
+</tr>
+<tr>
+    <td> --append-output </td>
+    <td> nmap 192.168.1.1 -oN file.file --append-output </td>
+    <td> Append a scan to a previous scan file </td>
+</tr>
+<tr>
+    <td> -v </td>
+    <td> nmap 192.168.1.1 -v </td>
+    <td> Increase the verbosity level (use -vv or more for greater effect) </td>
+</tr>
+<tr>
+    <td> -d </td>
+    <td> nmap 192.168.1.1 -d </td>
+    <td> Increase debugging level (use -dd or more for greater effect) </td>
+</tr>
+<tr>
+    <td> --reason </td>
+    <td> nmap 192.168.1.1 --reason </td>
+    <td> Display the reason a port is in a particular state, same output as -vv </td>
+</tr>
+<tr>
+    <td> --open </td>
+    <td> nmap 192.168.1.1 --open </td>
+    <td> Only show open (or possibly open) ports </td>
+</tr>
+<tr>
+    <td> --packet-trace </td>
+    <td> nmap 192.168.1.1 -T4 --packet-trace </td>
+    <td> Show all packets sent and received </td>
+</tr>
+<tr>
+    <td> --iflist </td>
+    <td> nmap --iflist </td>
+    <td> Shows the host interfaces and routes </td>
+</tr>
+<tr>
+    <td> --resume </td>
+    <td> nmap --resume results.file </td>
+    <td> Resume a scan </td>
+</tr>
+<tr>
+    <td style="font-weight: bold;">Command </td>
+    <td style="font-weight: bold;">Description </td>
+    <td></td>
+</tr>
+<tr>
+    <td> nmap -p80 -sV -oG - --open 192.168.1.1/24 | grep open</td>
+    <td> Scan for web servers and grep to show which IPs are running web servers</td>
+    <td></td>
+</tr>
+<tr>
+    <td> nmap -iR 10 -n -oX out.xml | grep "Nmap" | cut -d " " -f5 &gt; live-hosts.txt</td>
+    <td> Generate a list of the IPs of live hosts</td>
+    <td></td>
+</tr>
+<tr>
+    <td> nmap -iR 10 -n -oX out2.xml | grep "Nmap" | cut -d " " -f5 &gt;&gt; live-hosts.txt</td>
+    <td> Append IP to the list of live hosts</td>
+    <td></td>
+</tr>
+<tr>
+    <td> ndiff scanl.xml scan2.xml</td>
+    <td> Compare output from nmap using the ndif </td>
+    <td></td>
+</tr>
+<tr>
+    <td> xsltproc nmap.xml -o nmap.html</td>
+    <td> Convert nmap xml files to html files </td>
+    <td></td>
+</tr>
+<tr>
+    <td>grep " open " results.nmap | sed -r 's/ +/ /g' | sort | uniq -c | sort -rn | less</td>
+    <td>Reverse sorted list of how often ports turn up</td>
+    <td></td>
+</tr>
+</table>
+<br>
+<table id="Notes_table">
+<tr>
+    <td style="color:#ffb454;font-weight: bold;">Miscellaneous Options</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td style="font-weight: bold;">Switch </td>
+    <td style="font-weight: bold;">Example </td>
+    <td style="font-weight: bold;">Description </td>
+</tr>
+<tr>
+    <td>-6</td>
+    <td>  nmap -6 2607:f0d0:1002:51::4 </td>
+    <td>  Enable IPv6 scanning </td>
+</tr>
+<tr>
+    <td>  -h </td>
+    <td>  nmap -h </td>
+    <td>  nmap help screen </td>
+</tr>
+</table>
+<br>
+<table id="Notes_table">
+<tr>
+    <td style="color:#ffb454;font-weight: bold;">Other Useful Nmap Commands</td>
+    <td></td>
+</tr>
+<tr>
+    <td style="font-weight: bold;">Command </td>
+    <td style="font-weight: bold;">Description </td>
+</tr>
+<tr>
+    <td>  nmap -iR 10 -PS22-25,80,113,1050,35000 -v -sn </td>
+    <td>  Discovery only on ports x, no port scan </td>
+</tr>
+<tr>
+    <td>  nmap 192.168.1.1-1/24 -PR -sn -vv </td>
+    <td>  Arp discovery only on local network, no port scan </td>
+</tr>
+<tr>
+    <td> nmap -iR 10 -sn -traceroute </td>
+    <td> Traceroute to random targets, no port scan </td>
+</tr>
+<tr>
+    <td> nmap 192.168.1.1-50 -sL --dns-server 192.168.1.1 </td>
+    <td> Query the Internal DNS for hosts, list targets only </td>
+</tr>
+</table>
+
+                    </main>
+				
+				
+				
+				
+				
+				
+			
+              </div>
+            </div>
+          </div>
+          
+          
+       </div>
+      </div>
+    </div>
+  </div>
+
+
+<footer class="footer-container text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>© Realradioactive | Website created with <a href="https://realradioactive.github.io/" title="Create website with free html template">Realradioactive</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+     navActivePage();
+  });
+</script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-XXXXX-X', 'auto');
+  ga('send', 'pageview');
+</script>
+
+--> <script type="text/javascript" src="./main.70a66962.js"></script></body>
+
+</html>
